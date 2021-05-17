@@ -1,5 +1,3 @@
-console.log('git')
-
 const form = document.querySelector('form');
 const inputField = document.querySelector('input');
 const messageOne = document.querySelector('#messageOne');
