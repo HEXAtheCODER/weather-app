@@ -1,0 +1,45 @@
+body {
+  margin: 0 auto;
+  max-width: 950px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.header {
+  margin-top: 16px;
+  background-color: #f0f0f0;
+  display: flex;
+  border-radius: 0.5rem;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+#header-title {
+  margin-left: 2rem;
+}
+
+.h3-inline {
+  display: inline;
+}
+
+.navbar {
+  margin-right: 2rem;
+}
+
+.nav-list-item {
+  display: inline;
+  padding: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.main-body {
+  margin: 16px 0;
+}
+
+form {
+  margin: 150px 0;
+}
+
