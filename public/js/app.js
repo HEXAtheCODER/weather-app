@@ -9,7 +9,7 @@ form.addEventListener('submit', (e) => {
     
     let value = inputField.value
 
-    const url = 'http://localhost:3000/weather?address=' + value
+    const url = '/weather?address=' + value
 
     messageOne.textContent = 'Loading...'
     messageTwo.textContent = ''
