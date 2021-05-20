@@ -22,7 +22,7 @@ form.addEventListener('submit', (e) => {
                 messageOne.style.color = 'red'
             } else {
                 messageOne.textContent = value
-                messageTwo.textContent = data.forecast
+                messageTwo.textContent = data.data.forecast
                 messageTwo.style.color = 'green'
             }    
         })

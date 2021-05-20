@@ -10,12 +10,14 @@ const forecast = (latitude, logitude, callback) => {
       callback(body.error.info, undefined)
     } else {
       callback(undefined, {
-        forecast: `Current temperature is ${body.current.temperature}, it feels like ${body.current.feelslike}`,
-        temperature: body.current.temperature,
-        feelsLike: body.current.feelslike,
-        name: body.location.name,
-        country: body.location.country,
-        region: body.location.region
+        data: {
+          forecast: `Current temperature is ${body.current.temperature}, it feels like ${body.current.feelslike}`,
+          temperature: body.current.temperature,
+          feelsLike: body.current.feelslike,
+          name: body.location.name,
+          country: body.location.country,
+          region: body.location.region
+        }
       })
     }
   })
