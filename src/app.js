@@ -54,6 +54,18 @@ app.get('/weather', (req, res) => {
       res.send(response)
     })
   })
+})
+
+app.get('/weather/currentLocation', (req, res) => {
+  if (!req.query.latitude && !req.query.longitude) {
+    return res.send({
+      error: 'Enter address.'
+    })  
+  }
+  forecast(req.query.latitude, req.query.longitude, (error, response) => {
+    if(error) return res.send({ error })
+    res.send(response)
+  })
 
 })
 
